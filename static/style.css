@@ -1,0 +1,33 @@
+* {
+    font-family: Arial, serif;
+}
+
+header {
+    background-color: #E8FAFA;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: #1f1f24;
+    text-decoration: none;
+    margin-right: 40px;
+    border: 1px solid #fc557c;
+}
+
+.fixed-container {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+
+}
