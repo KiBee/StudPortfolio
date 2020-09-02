@@ -1,11 +1,11 @@
+import os
+
 from flask import Flask
-
-from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
+from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__)
-
-app = Flask(__name__)
+# static_path = os.path.join(project_root, '../static')
+app = Flask(__name__, static_folder='../static')
 app.secret_key = 'gachimuchi'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://kibee:1234@localhost:3306/first_flask'
