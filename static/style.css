@@ -10,12 +10,15 @@ header nav {
     display: flex;
 }
 
-header nav a {
-    color: #1f1f24;
-    text-decoration: none;
-    margin-right: 40px;
-    border: 1px solid #fc557c;
-}
+/*header nav a {*/
+/*    color: #1f1f24;*/
+/*    text-decoration: none;*/
+/*    margin-right: 40px;*/
+/*    border: 2px solid #fc557c;*/
+/*    border-radius: 3px;*/
+
+
+/*}*/
 
 .fixed-container {
     width: 1100px;
