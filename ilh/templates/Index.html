@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css"/>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>StudPortfolio</title>
-
-    <link rel="stylesheet" href="{{ url_for( 'static', filename='style.css') }}">
-
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='css/style.css') }}">
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
@@ -20,8 +22,9 @@
 <header>
     <div class="fixed-container">
         <div class="menu-container">
+            <img src="{{ url_for( 'static', filename='img/portfel.png') }}" alt="">
             <nav>
-                <a href="#">Общие сведения</a>
+                <a class="current" href="#">Общие сведения</a>
                 <a href="#">Образование</a>
                 <a href="#">Достижения</a>
                 <a href="#">Работа</a>
@@ -33,6 +36,71 @@
         </div>
     </div>
 </header>
+<div class="testing">
+    <div>
+
+        <form class="log_in" action="">
+
+            <h1>Вход</h1>
+            <label for="email">
+                Адрес электронной почты <span>*</span>
+            </label>
+            <input id="email" type="text" required>
+            <br>
+            <label for="pass">
+                Пароль <span>*</span>
+            </label>
+            <input id="pass" type="password" required>
+
+            <input type="submit" value="Вход">
+
+        </form>
+
+
+    </div>
+    <div>
+
+
+        <form class="registration" action="">
+            <h1>Регистрация</h1>
+
+            <label for="set_email">
+                Адрес электронной почты <span>*</span>
+            </label>
+            <input id="set_email" type="text" required>
+
+            <label for="set_pass">
+                Пароль <span>*</span>
+            </label>
+            <input id="set_pass" type="password" required>
+
+            <label for="set_pass_confirm">
+                Повторите пароль <span>*</span>
+            </label>
+            <input id="set_pass_confirm" type="password" required>
+
+            <label for="set_surname">
+                Фамилия <span>*</span>
+            </label>
+            <input id="set_surname" type="text" required>
+
+            <label for="set_name">
+                Имя <span>*</span>
+            </label>
+            <input id="set_name" type="text" required>
+
+            <label for="set_patronymic">
+                Отчество
+            </label>
+            <input id="set_patronymic" type="text">
+
+            <input type="submit" value="Регистрация">
+
+        </form>
+
+    </div>
+
+</div>
 
 </body>
 </html>
